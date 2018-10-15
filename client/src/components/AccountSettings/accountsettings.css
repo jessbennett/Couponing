@@ -1,0 +1,30 @@
+
+.updatebtn{
+    margin-top:10px;
+    background-color:#fde428;
+    border-radius:5px;
+    color: #000080;
+    width:100%;
+    margin-left:6px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+  }
+
+.adjustAccountSettings {
+    color: #000080;
+}
+
+.accountForm {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.accountForm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

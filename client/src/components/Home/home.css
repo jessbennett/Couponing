@@ -1,0 +1,14 @@
+.coupons{
+    width: 100%;
+    height: 500px;
+    display: inline;
+    background-color: red;
+}
+.couponsHolder{
+    display: inline;
+    background-color: green;
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
