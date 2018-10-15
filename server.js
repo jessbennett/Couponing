@@ -172,8 +172,6 @@ app.post('/api/signin', async (req, res) => {
 
 app.post(`/api/signout`, async(req, res) => {
   const email = req.body.email;
-  if (email === "stevenn") console.log('dasdasdasd')
-  else console.log('nope')
   const loggedInKey = req.body.loggedInKey;
   const ip = req.headers['x-forwarded-for'] || 
     req.connection.remoteAddress || 
