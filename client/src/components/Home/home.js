@@ -81,7 +81,7 @@ class Home extends Component {
         that.setState({coupons: CouponsMaker(data.coupons)})     
       } catch (error) {}
     }
-    // Todo: TRY/CATCH error for geolocator
+    // Todo: TRY/CATCH error for geolocator... Just refresh the browser if you're getting an error
     function showPosition(position) {
       that.setState({
         geolocation: position.coords.latitude + " " + position.coords.longitude,
