@@ -217,8 +217,6 @@ componentDidMount () {
           {this.state.mainContent}
           <br/>
           <br/>
-          {/* {this.state.signinSignoutButton}
-          {this.state.signupButton} */}
 
         <Footer/>
         </div>

@@ -12,6 +12,7 @@ class Footer extends Component {
       <div>
         <footer>
             <ul className="social">
+              {/* boilerplate CSS, all credit is given to NavBar reator */}
                 <li><a href="https://twitter.com/mayursuthar2693" ><i className="icon-twitter"></i></a></li>
                 <li><a href="https://www.facebook.com/mayursuthar2693" ><i className="icon-facebook"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/sutharmayur" ><i className="icon-linkedin"></i></a></li>

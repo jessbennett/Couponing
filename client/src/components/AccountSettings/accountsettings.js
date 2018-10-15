@@ -37,17 +37,10 @@ class AccountSettings extends Component {
     this.updateBuisnessName = this.updateBuisnessName.bind(this);
     this.updatePhoneNumber = this.updatePhoneNumber.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.updateInput = this.updateInput.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
     this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
   }
 
-  // updateInputField(event, fieldBeingUpdated) {
-  //   this.setState({
-  //     [fieldBeingUpdated] : event.target.value
-  //   })
-  // }
   componentDidMount() {
     if (this.captchaDemo) {
         this.captchaDemo.reset();
@@ -137,12 +130,7 @@ class AccountSettings extends Component {
       <div className="adjustAccountSettings">
         
         <h2>Change Account Settings</h2>
-          {/* <div className="inputGroup">
-            <input id="radio1" name="radio" type="radio" value="checked" checked onChange={this.updateIsCustomer.bind(this)}/>
-            <label>Customer</label>
-            <input id="radio2" name="radio" type="radio" onChange={this.updateIsBuisnessOwner.bind(this)}/>
-            <label> Buisness Owner</label> 
-          </div> */}
+       
           </div>
         
           <InputField

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './home.css';
-// import CouponsMaker from '../../couponsMaker';
 
 class Home extends Component {
   constructor(props) {
@@ -53,7 +52,6 @@ class Home extends Component {
           <hr/>
           <br/>
           <button className="getCoupon" onClick={this.getCoupons.bind(this, coupons._id)}> Get Coupon </button>
-        {/* <button className="getCoupon" onClick={this.props.parentMethod(coupons._id)}> Get Coupon </button> */}
         </div>
         <br/>
       </div>
@@ -83,6 +81,7 @@ class Home extends Component {
         that.setState({coupons: CouponsMaker(data.coupons)})     
       } catch (error) {}
     }
+    // Todo: TRY/CATCH error for geolocator
     function showPosition(position) {
       that.setState({
         geolocation: position.coords.latitude + " " + position.coords.longitude,
@@ -117,17 +116,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-          {/* <form action="/charge" method="POST">
-          <script
-            src="https://checkout.stripe.com/checkout.js" className="stripe-button"
-            data-key="pk_test_3eBW9BZ4UzRNsmtPCk9gc8F2"
-            data-amount="2500"
-            data-name="Testing"
-            data-description="Example charge"
-            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-            data-locale="auto">
-          </script>
-        </form> */}
+          
         <div className="center">
           <h2>Coupons near you</h2>
         </div>

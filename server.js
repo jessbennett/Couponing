@@ -17,19 +17,6 @@ const stripe = require('./stripe');
 const recaptchaSecretKey = "6Lf9D3QUAAAAAHfnc-VISWptFohHPV2hyfee9_98"
 const db = require('./config/db')
 
-// const fs = require('fs')
-// const htttpsOptions = {
-//   cert: fs.readFileSync('./ssl/server.crt'),
-//   key: fs.readFileSync('./ssl/server.key')
-// }
-// const https = require('https')
-
-// https.createServer(htttpsOptions, app)
-
-// Token is created using Checkout or Elements!
-// Get the payment token ID submitted by the form:
-// const token = request.body.stripeToken; // Using Express
-
 
 //!todo, get production mongodb account and login string. Use .env for connection string
 mongoose.connect(db).then(console.log('Connected to mongoDB'));
@@ -83,15 +70,6 @@ app.post('/api/signupCustomer', async(req, res) => {
                 buisnessName: req.body.buisnessName,
                 password: hashedPass,
                 phoneNumber: req.body.phoneNumber,
-                // creditCardNumber: req.body.cardNumber,
-                // CCV: req.body.CCV,
-                // zipCode: req.body.zipCode,
-                // experationDate: req.body.experationDate,
-                // address: req.body.address,
-                // cardholderName: req.body.cardholderName,
-                // city: req.body.city.toLowerCase(),
-                // country: req.body.country,
-                // region: req.body.region,
                 yourPick: req.body.yourPick,
                 loggedInKey: loggedInKey,
                 couponIds: [],

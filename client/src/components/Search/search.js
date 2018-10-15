@@ -188,12 +188,7 @@ class Search extends Component {
       className='searchCategory'
       onChange={this.updateCategory}
       />
-      {/* <br/>
-      <SearchField
-      htmlFor="Keywords: Seperate keywords by commas"
-      className='searchCategory'
-      onChange={this.updateKeywords}
-      /> */}
+     
       <button type="submit" value="Submit" className="searchButton" onClick={this.handleSearch}><strong>Search</strong></button>
       <ReCaptcha
         ref={(el) => {this.captchaDemo = el;}}
