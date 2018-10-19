@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
+// Note: Match data access patterns for best preformance
+
 const accountInfo = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     email: String,
-    buisnessName: String,
+    buisnessName: String, //Array []
     password: String,
     phoneNumber: String,
     city: String,
